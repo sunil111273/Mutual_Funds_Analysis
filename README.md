@@ -74,3 +74,12 @@ pip install -r requirements.txt
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+### Day 2 — Data Cleaning + SQL Database Design ✅
+- Cleaned nav_history, investor_transactions, scheme_performance (see data/processed/)
+- Designed SQLite star schema: dim_fund, dim_date, fact_nav, fact_transactions, fact_performance, fact_aum
+- Loaded all datasets into `bluestock_mf.db`, verified row counts match source
+- Wrote 10 analytical SQL queries (`sql/queries.sql`)
+- Documented all columns in `reports/data_dictionary.md`
+
+**Day 2 Deliverables:** `data/processed/*.csv`, `bluestock_mf.db`, `sql/schema.sql`, `sql/queries.sql`, `reports/data_dictionary.md`
