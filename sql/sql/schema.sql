@@ -58,6 +58,10 @@ CREATE TABLE fact_transactions (
     FOREIGN KEY (date_id) REFERENCES dim_date(date_id)
 );
 
+ALTER TABLE fact_transactions
+ADD COLUMN kyc_flag INTEGER; -- to add a new column
+
+
 -- fact_performance: latest return/risk metrics per fund
 CREATE TABLE fact_performance (
     amfi_code INTEGER PRIMARY KEY,
@@ -88,3 +92,30 @@ CREATE TABLE fact_aum (
     PRIMARY KEY (fund_house, date_id),
     FOREIGN KEY (date_id) REFERENCES dim_date(date_id)
 );
+SELECT name
+FROM sqlite_master
+WHERE type = 'table'; --to check the tables created or not
+
+
+--to check the data loaded or not
+SELECT COUNT(*) FROM dim_fund;
+SELECT COUNT(*) FROM dim_date;
+SELECT COUNT(*) FROM fact_nav;
+SELECT COUNT(*) FROM fact_transactions;
+SELECT COUNT(*) FROM fact_performance;
+SELECT COUNT(*) FROM fact_aum;
+
+--to create a new table
+CREATE TABLE sip_inflows (
+    month TEXT PRIMARY KEY,
+    sip_inflow_crore REAL,
+    active_sip_accounts_crore REAL,
+    yoy_growth_pct REAL
+);
+
+--to create new columns in sip_inflows
+ALTER TABLE sip_inflows
+ADD COLUMN new_sip_accounts_lakh REAL;
+
+ALTER TABLE sip_inflows
+ADD COLUMN sip_aum_lakh_crore REAL;

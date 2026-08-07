@@ -1,0 +1,11 @@
+amfi_code,scheme_name,benchmark,tracking_error_pct,observations
+100016,HDFC Top 100 Fund - Regular Plan - Growth,NIFTY50,19.46,784
+100016,HDFC Top 100 Fund - Regular Plan - Growth,NIFTY100,19.54,784
+102886,UTI Mid Cap Fund - Regular - Growth,NIFTY50,22.36,784
+102886,UTI Mid Cap Fund - Regular - Growth,NIFTY100,22.34,784
+119095,Axis Small Cap Fund - Regular - Growth,NIFTY50,28.16,784
+119095,Axis Small Cap Fund - Regular - Growth,NIFTY100,28.35,784
+101207,ABSL Small Cap Fund - Regular - Growth,NIFTY50,29.0,784
+101207,ABSL Small Cap Fund - Regular - Growth,NIFTY100,29.31,784
+119092,Axis Bluechip Fund - Regular - Growth,NIFTY50,19.23,784
+119092,Axis Bluechip Fund - Regular - Growth,NIFTY100,18.59,784

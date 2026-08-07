@@ -2,21 +2,45 @@
 
 An end-to-end data analysis project that ingests, cleans, and analyzes Indian mutual fund data — combining historical AMFI-style datasets with live NAV data from the mfapi.in API — to evaluate fund performance, AUM trends, and investor behavior across schemes and categories.
 
+---
+
 ## Overview
 
-The project moves through four stages: raw data ingestion and validation, cleaning and SQL database design, exploratory data analysis, and (upcoming) reporting/dashboards. Each stage builds directly on the outputs of the previous one.
+The project moves through five stages: raw data ingestion and validation, cleaning and SQL database design, exploratory data analysis, fund performance analytics, and (upcoming) reporting/dashboards. Each stage builds directly on the outputs of the previous one.
 
 ## Project Structure
 
+```
+mutual-funds-analysis/
+├── data/
+│   ├── raw/                  # Original provided CSVs
+│   └── processed/            # Cleaned, validated datasets
+├── sql/
+│   ├── schema.sql
+│   └── queries.sql
+├── reports/
+│   ├── data_dictionary.md
+│   └── charts/                # Exported PNG/HTML visualizations
+├── bluestock_mf.db            # SQLite database
+├── EDA_Analysis.ipynb
+├── data_ingestion.py
+├── live_nav_fetch.py
+├── requirements.txt
+└── README.md
+```
+
 ## Tools & Dependencies
 
-- **Language:** Python
-- **Data processing:** pandas, numpy
-- **Visualization:** matplotlib, seaborn, plotly
-- **Database:** SQLAlchemy, SQLite
-- **Other:** requests, scipy, Jupyter
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Data processing | pandas, numpy |
+| Visualization | matplotlib, seaborn, plotly |
+| Database | SQLAlchemy, SQLite |
+| Other | requests, scipy, Jupyter |
 
 Install everything with:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -40,7 +64,7 @@ pip install -r requirements.txt
 
 ## Project Progress
 
-### Day 1 — Project Setup + Data Ingestion (ETL) ✅
+### Day 1 — Project Setup & Data Ingestion (ETL) ✅
 
 - Set up the project folder structure and initialized the Git/GitHub repository
 - Installed all dependencies (see `requirements.txt`)
@@ -52,7 +76,9 @@ pip install -r requirements.txt
 
 **Deliverables:** `data_ingestion.py`, `live_nav_fetch.py`, `requirements.txt`, GitHub repo with Day 1 commit
 
-### Day 2 — Data Cleaning + SQL Database Design ✅
+---
+
+### Day 2 — Data Cleaning & SQL Database Design ✅
 
 - Cleaned `nav_history`, `investor_transactions`, and `scheme_performance`; applied lighter validation (deduplication, date parsing) to the remaining 7 datasets — all 10 outputs saved to `data/processed/`
 - Designed a SQLite star schema: `dim_fund`, `dim_date`, `fact_nav`, `fact_transactions`, `fact_performance`, `fact_aum`
@@ -61,6 +87,8 @@ pip install -r requirements.txt
 - Documented all columns, data types, and business definitions in `reports/data_dictionary.md`
 
 **Deliverables:** `data/processed/*.csv`, `bluestock_mf.db`, `sql/schema.sql`, `sql/queries.sql`, `reports/data_dictionary.md`
+
+---
 
 ### Day 3 — Exploratory Data Analysis (EDA) ✅
 
@@ -84,7 +112,7 @@ Performed comprehensive exploratory data analysis on the processed datasets usin
 - Active SIP accounts and total industry folios both nearly doubled over the same period (folios: 13.26 Cr → 26.12 Cr)
 - Portfolio holdings are concentrated in Banking, IT, and Pharma across equity schemes
 - Investor transaction value remains concentrated in T30 cities relative to B30
-- Large-cap fund NAV returns show unexpectedly low correlation with each other and with Nifty50 — flagged as a limitation of the synthetic dataset rather than a genuine market pattern
+- Large-cap fund NAV returns show unexpectedly low correlation with each other and with Nifty 50 — flagged as a limitation of the synthetic dataset rather than a genuine market pattern
 
 **Technologies used:** pandas, matplotlib, seaborn, plotly, Jupyter Notebook
 
@@ -100,6 +128,41 @@ Performed comprehensive exploratory data analysis on the processed datasets usin
 - `eda_nav_return_correlation.py`
 - `eda_sector_allocation.py`
 - Exported charts in `reports/`
+
+---
+
+### Day 4 — Fund Performance Analytics ✅
+
+Performed advanced mutual fund performance analysis using NAV history and benchmark data to evaluate fund performance against market indices.
+
+**Analysis completed:**
+- Selected the top 5 equity mutual funds based on the fund scorecard ranking
+- Filtered NAV data for the last 3 years (May 2023 – May 2026)
+- Rebased mutual fund NAV and benchmark values to an index base of 100 for performance comparison
+- Created an interactive Plotly benchmark comparison chart between:
+  - Top 5 Mutual Funds
+  - NIFTY50
+  - NIFTY100
+- Exported performance comparison charts in HTML and PNG formats
+- Calculated daily returns for selected mutual funds and benchmarks
+- Computed annualized tracking error for each fund against NIFTY50 and NIFTY100
+- Generated a tracking error report for risk evaluation
+
+**Key insights:**
+- HDFC Top 100 Fund and Axis Bluechip Fund showed relatively lower tracking error compared to small-cap funds, indicating closer movement with benchmark indices
+- Small-cap funds (Axis Small Cap and ABSL Small Cap) showed higher tracking error due to greater deviation from benchmark movements and higher volatility
+- All selected funds had 784 matching daily return observations across the 3-year analysis period
+- Benchmark comparison highlights differences in risk-return behavior between large-cap, mid-cap, and small-cap mutual fund categories
+- Tracking error analysis helps evaluate how consistently funds move relative to market benchmarks
+
+**Technologies used:** Python, pandas, NumPy, Plotly, Jupyter Notebook
+
+**Deliverables:**
+- `benchmark_comparison.html`
+- `benchmark_comparison.png`
+- `tracking_error_top5.csv`
+- Performance comparison analysis script
+- Tracking error calculation script
 
 ---
 
