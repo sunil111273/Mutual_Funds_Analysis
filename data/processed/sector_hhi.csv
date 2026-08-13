@@ -1,0 +1,35 @@
+concentration_rank,amfi_code,scheme_name,fund_house,category,sub_category,sector_hhi,concentration_level
+1,119092,Axis Bluechip Fund - Regular - Growth,Axis Mutual Fund,Equity,Large Cap,2967.69,High (Concentrated)
+2,148569,Mirae Asset Tax Saver Fund - Regular - Growth,Mirae Asset MF,Equity,ELSS,2549.92,High (Concentrated)
+3,125498,HDFC Mid-Cap Opportunities Fund - Direct - Growth,HDFC Mutual Fund,Equity,Mid Cap,2531.55,High (Concentrated)
+4,102887,UTI Flexi Cap Fund - Regular - Growth,UTI Mutual Fund,Equity,Flexi Cap,2513.83,High (Concentrated)
+5,149323,DSP Midcap Fund - Regular - Growth,DSP Mutual Fund,Equity,Mid Cap,2410.77,Moderate
+6,120505,ICICI Pru Midcap Fund - Regular - Growth,ICICI Prudential MF,Equity,Mid Cap,2386.95,Moderate
+7,118635,Nippon India ETF Nifty 50 BeES,Nippon India MF,Equity,Index/ETF,2374.97,Moderate
+8,119599,SBI Small Cap Fund - Direct Plan - Growth,SBI Mutual Fund,Equity,Small Cap,2323.61,Moderate
+9,120506,ICICI Pru Value Discovery Fund - Regular - Growth,ICICI Prudential MF,Equity,Value,2314.64,Moderate
+10,100033,HDFC Mid-Cap Opportunities Fund - Regular - Growth,HDFC Mutual Fund,Equity,Mid Cap,2276.47,Moderate
+11,119552,SBI Bluechip Fund - Direct Plan - Growth,SBI Mutual Fund,Equity,Large Cap,2275.08,Moderate
+12,101207,ABSL Small Cap Fund - Regular - Growth,Aditya Birla Sun Life MF,Equity,Small Cap,2227.27,Moderate
+13,120504,ICICI Pru Bluechip Fund - Direct - Growth,ICICI Prudential MF,Equity,Large Cap,2212.13,Moderate
+14,118633,Nippon India Large Cap Fund - Direct - Growth,Nippon India MF,Equity,Large Cap,2212.0,Moderate
+15,148568,Mirae Asset Emerging Bluechip Fund - Regular - Growth,Mirae Asset MF,Equity,Large & Mid Cap,2180.86,Moderate
+16,120841,Kotak Bluechip Fund - Regular - Growth,Kotak Mahindra MF,Equity,Large Cap,2158.93,Moderate
+17,118632,Nippon India Large Cap Fund - Regular - Growth,Nippon India MF,Equity,Large Cap,2072.59,Moderate
+18,148567,Mirae Asset Large Cap Fund - Regular - Growth,Mirae Asset MF,Equity,Large Cap,2012.48,Moderate
+19,149324,DSP Small Cap Fund - Regular - Growth,DSP Mutual Fund,Equity,Small Cap,1887.01,Moderate
+20,119598,SBI Small Cap Fund - Regular Plan - Growth,SBI Mutual Fund,Equity,Small Cap,1880.85,Moderate
+21,119093,Axis Bluechip Fund - Direct - Growth,Axis Mutual Fund,Equity,Large Cap,1842.33,Moderate
+22,149322,DSP Top 100 Equity Fund - Regular - Growth,DSP Mutual Fund,Equity,Large Cap,1826.95,Moderate
+23,120503,ICICI Pru Bluechip Fund - Regular - Growth,ICICI Prudential MF,Equity,Large Cap,1821.68,Moderate
+24,102885,UTI Nifty 50 Index Fund - Regular - Growth,UTI Mutual Fund,Equity,Index,1807.12,Moderate
+25,100016,HDFC Top 100 Fund - Regular Plan - Growth,HDFC Mutual Fund,Equity,Large Cap,1805.88,Moderate
+26,101206,ABSL Frontline Equity Fund - Regular - Growth,Aditya Birla Sun Life MF,Equity,Large Cap,1800.42,Moderate
+27,119094,Axis Midcap Fund - Regular - Growth,Axis Mutual Fund,Equity,Mid Cap,1751.0,Moderate
+28,125497,HDFC Top 100 Fund - Direct Plan - Growth,HDFC Mutual Fund,Equity,Large Cap,1724.11,Moderate
+29,120842,Kotak Emerging Equity Fund - Regular - Growth,Kotak Mahindra MF,Equity,Mid Cap,1620.62,Moderate
+30,118634,Nippon India Small Cap Fund - Regular - Growth,Nippon India MF,Equity,Small Cap,1602.99,Moderate
+31,119095,Axis Small Cap Fund - Regular - Growth,Axis Mutual Fund,Equity,Small Cap,1595.82,Moderate
+32,119551,SBI Bluechip Fund - Regular Plan - Growth,SBI Mutual Fund,Equity,Large Cap,1424.91,Low (Diversified)
+33,120843,Kotak Flexicap Fund - Regular - Growth,Kotak Mahindra MF,Equity,Flexi Cap,1362.06,Low (Diversified)
+34,102886,UTI Mid Cap Fund - Regular - Growth,UTI Mutual Fund,Equity,Mid Cap,1240.2,Low (Diversified)
